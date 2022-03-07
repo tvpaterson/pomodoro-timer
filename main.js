@@ -6,11 +6,29 @@
         longBreakInterval: 4,
       };
 
+    
+    let interval;
+
       // ADD EVENT LISTENER TO BUTTONS TO BE ABLE TO CHANGE MODES
       const modeButtons = document.querySelector('#js-mode-buttons');
       modeButtons.addEventListener('click', handleMode);
       
-      
+      //FUNCTION TO INITIATE TIMER
+      function startTimer(){
+          let { total } = timer.remainingTime;
+          const endTime = Date.parse(new Date()) + total * 1000;
+          
+          interval = setInterval(() => {
+              timer.remainingTime = getRemainingTime(endTime);
+              updateClock();
+
+              total = timer.remainingTime.total;
+              if (total <= 0) {
+                  clearInterval(interval);
+              }
+          }, 1000);
+      }
+
       // FUNCTION TO UPDATE CLOCK WHEN MODE IS CHANGED
       function updateClock() {
         const { remainingTime } = timer;
