@@ -21,8 +21,6 @@ progress {
   border-radius: 5px;
   width: 700px;
   height: 12px;
-  /* position: fixed; */
-  /* justify-content: center; */
   top: 0;
 }
 
@@ -31,7 +29,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: #00D39F;
+  background-color: #EB7E33;
 }
 
 .timer {
@@ -63,7 +61,7 @@ progress::-webkit-progress-value {
   cursor: pointer;
   box-shadow: none;
   font-weight: 300;
-  color: #00D39F;
+  color: #EB7E33;
   border: 1px solid transparent;
   margin: 0px;
   border-radius: 4px;
