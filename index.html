@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Taylors Pomodoro Timer</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+
   </head>
   <link rel="icon" href="tomato-timer.png">
   <body>
     <main class="app">
-      <progress id="js-progress" value="0"></progress>
-      <div class="progress-bar"></div>
       <div class="timer">
         <div class="button-group mode-buttons" id="js-mode-buttons">
           <button
@@ -41,6 +43,9 @@
           <span class="separator">:</span>
           <span id="js-seconds">00</span>
         </div>
+        <div class="progress-bar">
+          <progress id="js-progress" value="0"></progress>
+        </div>
         <button class="main-button" data-action="start" id="js-btn">
           Start
         </button>
@@ -48,8 +53,8 @@
     </main>
     <div class="hidden">
       <audio src="backtowork.mp3" data-sound="pomodoro"></audio>
-      <audio src="break.mp3" data-sound="shortBreak"></audio>
-      <audio src="break.mp3" data-sound="longBreak"></audio>
+      <audio src="zapsplat_science_fiction_alarm_warning_beeping_med_fast_70253.mp3" data-sound="shortBreak"></audio>
+      <audio src="zapsplat_science_fiction_alarm_warning_beeping_med_fast_70253.mp3" data-sound="longBreak"></audio>
     </div>
     <script src="main.js"></script>
   </body>

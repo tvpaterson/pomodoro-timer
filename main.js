@@ -8,7 +8,7 @@ const timer = {
 
 let interval;
 
-const buttonSound = new Audio('button-sound.mp3');
+const buttonSound = new Audio('zapsplat_science_fiction_computer_beep_002_77768.mp3');
 const mainButton = document.getElementById('js-btn');
 mainButton.addEventListener('click', () => {
   buttonSound.play();
