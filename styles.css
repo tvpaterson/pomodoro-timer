@@ -19,7 +19,7 @@ body {
 
 progress {
   border-radius: 5px;
-  width: 700px;
+  width: 800px;
   height: 12px;
   top: 0;
 }
@@ -43,8 +43,8 @@ progress::-webkit-progress-value {
 
 .clock {
   color: white;
-  border: 0.5rem solid;
-  border-radius: 10px;
+  border: 0.3rem solid;
+  border-radius: 5px;
   border-color: #999999;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -53,6 +53,7 @@ progress::-webkit-progress-value {
   display: flex;
   align-items: center;
   font-family: arial, sans-serif;
+  padding-left: 10px;
 }
 
 .mode-button {
