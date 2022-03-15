@@ -53,7 +53,6 @@ progress::-webkit-progress-value {
   display: flex;
   align-items: center;
   font-family: arial, sans-serif;
-  padding-left: 10px;
 }
 
 .mode-button {
