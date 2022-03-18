@@ -19,7 +19,7 @@ body {
 
 progress {
   border-radius: 5px;
-  width: 800px;
+  width: 900px;
   height: 12px;
   top: 0;
 }
@@ -48,7 +48,7 @@ progress::-webkit-progress-value {
   border-color: #999999;
   margin-top: 50px;
   margin-bottom: 30px;
-  font-size: 15rem;
+  font-size: 20rem;
   line-height: 1;
   display: flex;
   align-items: center;
